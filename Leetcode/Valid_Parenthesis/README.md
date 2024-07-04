@@ -1,4 +1,4 @@
-20. Valid Parentheses
+20. Valid Parentheses https://leetcode.com/problems/valid-parentheses/description/
 Solved
 Easy
 Topics
@@ -11,7 +11,6 @@ An input string is valid if:
 Open brackets must be closed by the same type of brackets.
 Open brackets must be closed in the correct order.
 Every close bracket has a corresponding open bracket of the same type.
- 
 
 Example 1:
 
@@ -25,7 +24,6 @@ Example 3:
 
 Input: s = "(]"
 Output: false
- 
 
 Constraints:
 
