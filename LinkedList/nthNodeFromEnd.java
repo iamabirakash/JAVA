@@ -15,6 +15,20 @@ public class nthNodeFromEnd {
         }
         return temp;
     }
+    
+    // In One Traversal
+    public static Node nthNode2(Node head, int idx){
+        Node slow = head;
+        Node fast = head;
+        for (int i = 1; i <= idx; i++) {
+            fast = fast.next;
+        }
+        while(fast!=null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
+    }
     public static class Node{
         int data;
         Node next;
@@ -35,7 +49,8 @@ public class nthNodeFromEnd {
         d.next = e;
         e.next = f;
         //100->101->102->103->104->105
-        Node q = nthNode(a,2); // a -> head
+        // Node q = nthNode(a,2); // a -> head
+        Node q = nthNode2(a,2); // a -> head
         System.out.println(q.data);
     }
 }
