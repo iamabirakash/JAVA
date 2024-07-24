@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 public class checkprime {
     // int a = 30//2+1;
@@ -11,7 +11,7 @@ public class checkprime {
                     System.out.println(i);
                 }
             }
-            }
         }
+    return 0;
     }
 }
