@@ -49,7 +49,16 @@ public class doublyLL {
         head = t;
         return head;
     }
-
+    
+    public static void insetionAtTail(Node head, int x){
+        Node temp = head;
+        while(temp.next!=null){
+            temp = temp.next;
+        }
+        Node t = new Node(x);
+        temp.next = t;
+        t.prev = temp;
+    }
     public static void main(String[] args) {
         //4 10 2 99 13
         Node a = new Node(4);
@@ -70,7 +79,9 @@ public class doublyLL {
         // display(a);
         // displayrev(e);
         // displayrandom(c);
-        Node newHead = insetionAtHead(a, 35);
-        display(newHead);
+        // Node newHead = insetionAtHead(a, 35);
+        // display(newHead);
+        insetionAtTail(a, 90);
+        display(a);
     }
 }
