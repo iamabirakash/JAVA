@@ -42,6 +42,14 @@ public class doublyLL {
         System.out.println();
     }
 
+    public static Node insetionAtHead(Node head, int x){
+        Node t = new Node(30);
+        t.next = head;
+        head.prev = t;
+        head = t;
+        return head;
+    }
+
     public static void main(String[] args) {
         //4 10 2 99 13
         Node a = new Node(4);
@@ -61,6 +69,8 @@ public class doublyLL {
         e.next =  null;
         // display(a);
         // displayrev(e);
-        displayrandom(c);
+        // displayrandom(c);
+        Node newHead = insetionAtHead(a, 35);
+        display(newHead);
     }
 }
