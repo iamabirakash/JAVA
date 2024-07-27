@@ -8,6 +8,7 @@ public class Loops {
             //System.out.print(i+" ");
         Scanner sc = new Scanner(System.in);    //printing sum of first n numbers
         int n = sc.nextInt();
+        sc.close();
 
         int sum = 0;
         for(int i=0; i<=n; i++){
