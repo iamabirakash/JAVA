@@ -12,6 +12,7 @@ public class Conditions {
         ///}
 
         int x = sc.nextInt();
+        sc.close();
 
         if (x % 2 == 0){
             System.out.println("Even");
