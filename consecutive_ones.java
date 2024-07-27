@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 public class consecutive_ones {
     public static int findMaxConsecutiveOnes(int[] nums) {
         int maxCount = 0;
