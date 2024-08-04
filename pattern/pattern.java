@@ -1,5 +1,5 @@
 package pattern;
-import java.util.*;   //nested loops
+// import java.util.*;   //nested loops
 
 public class pattern {
     public static void main(String[] args) {
