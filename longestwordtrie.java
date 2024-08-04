@@ -55,7 +55,7 @@ public class longestwordtrie {
         if(root == null) {
             return;
         }
-        int count = 0;
+        // int count = 0;
         for(int i = 0; i<26; i++) {
             if(root.children[i]!=null && root.children[i].eow == true) {
                 temp.append((char)(i+'a')); //typecasting
